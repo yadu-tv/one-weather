@@ -12,13 +12,17 @@
     <script src="/script.js"></script>
 </head>
 <body>
+    <div class="navbar">
+        <a href="https://github.com/yadu-tv/one-weather">Github</a>
+    </div>
+
     <div class="container">
         <div class="search-box">
             <i class="fa-solid fa-location-dot" style="float: left"></i>
             <input id="location" type="text" placeholder="Enter the location">
             <button id="location-button" class="fa-solid fa-magnifying-glass" onclick="checkLocation()"></button>
         </div>
-
+        
         <div id="weatherNotFound" class="weather-not-found" style="display: none;">
             <i class="fa-solid fa-triangle-exclamation"></i>
             <p>Opps! Location not found</p>
@@ -26,7 +30,9 @@
 
         <div id="weatherFound" class="weather-found" style="display: block">
             <div class="weather-box">
-                <i class="fa-solid fa-cloud-rain"></i>
+                <div class="weather-logo">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
                 <div class="temp-desc">
                     <p class="temperature">21°</p>
                     <p class="description"> Slightly Rainy</p>
@@ -36,19 +42,12 @@
             <div class="weather-details">
                 <div class="humidity">
                     <i class="fa-solid fa-water"></i>
-                    <br>
-                    <div class="text">
-                        <span></span>
-                        <p>Humidity</p>
-                    </div>
+                    <p>12 g.m-3</p>
                 </div>
     
                 <div class="wind">
                     <i class="fa-solid fa-wind"></i>
-                    <div class="text">
-                        <span></span>
-                        <p>Wind Speed</p>
-                    </div>
+                    <p>5km/hr</p>
                 </div>
             </div>
         </div>

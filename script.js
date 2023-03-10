@@ -10,6 +10,11 @@ function revealLocation () {
     document.getElementById("weatherFound").style.display = 'block';
 }
 
+function startPage() {
+    document.getElementById("weatherNotFound").style.display = 'none';
+    document.getElementById("weatherFound").style.display = 'none';
+}
+
 //to click the button on pressing enter key
 window.onload = function() {
     var input = document.getElementById("location");
@@ -28,11 +33,15 @@ function checkLocation () {
     x.toString();
     var yes = 'yes';
     yes.toString();
-
-    if( x === yes ) {
-        revealLocation();
+    if (x) {
+        if( x === yes ) {
+            revealLocation();
+        } else {
+            revealNoLocationWarning();
+        }
     } else {
-        revealNoLocationWarning();
+        console.log("enter a value");
+        startPage();
     }
 }
 
