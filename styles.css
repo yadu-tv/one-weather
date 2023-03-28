@@ -1,4 +1,5 @@
 * {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,39 +12,58 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFF1DC;
-    color: #FFF1DC;
+    background: #f5f5f5;
+    color: #f5f5f5;
     overflow: hidden;
+    transition: 0.6s ease-out;
 }
 .navbar {
-    position: absolute;
     top: 0;
-    right: 0;
+
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    font-size: 22px;
     margin-top: 20px;
-    margin-right: 20px;
-    background: #3A98B9;
-    border-radius: 18px;
-    text-align: center;
-    padding: 10px;
-    height: max-content;
-    width: max-content;
+    transition: 0.6s ease-out;
 }
 
+.navbar button{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #f5f5f5;
+    color: #F2AA4C;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 5vw;
+    transition: 0.6s ease-out;
+}
+
+
 .navbar a {
-    color: #FFF1DC;
+    margin-top: 25px;
+    margin-right: 5vw;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: #f5f5f5;
+    color: #F2AA4C;
     text-decoration: none;
+    transition: 0.6s ease-out;
 }
 
 .container {
     position: relative;
-    background: #3A98B9;
-    width: 400px;
+    background: #F2AA4C;
+    width: 50%;
+    max-width: 400px;
     height: min-content;
+    min-width: 300px;
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
-    font-family: 'Roboto', sans-serif;
-    transition: 0.6s ease-out;
 }
 
 .search-box {
@@ -52,28 +72,34 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #FFF1DC;
-    border: #FFF1DC;
+    background: #f5f5f5;
+    border: #f5f5f5;
     padding: 15px;
     border-radius: 18px;
+    transition: 0.6s ease-out;
 }
 
 .search-box i {
-    color: black;
+    color: #F2AA4C;
     font-size: 20px;
+    transition: 0.6s ease-out;
 }
 
 .search-box input{
-    background: #FFF1DC;
+    background: #f5f5f5;
+    color: #F2AA4C;
     width: 80%;
     font-size: 22px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: 0.6s ease-out;
 }
 
 .search-box button {
-    background: #FFF1DC;
+    background: #f5f5f5;
+    color: #F2AA4C;
     font-size: 20px;
+    transition: 0.6s ease-out;
 }
 .weather-not-found {
     text-align: center;
@@ -89,11 +115,13 @@ body {
     font-size: 20px;
 }
 
-.weather-box {
-    padding: 15px;
+.weather-found {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+.weather-box {
+    text-align: center;
 }
 
 .weather-box i{
@@ -124,18 +152,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px;
+    padding-top: 20px;
     font-size: 20px;
+    height: min-content;
 }
 
 .humidity {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: min-content;
 }
 
 .wind {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    height: min-content;
 }
