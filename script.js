@@ -101,6 +101,7 @@ function changeMode () {
 
 function setMode( value ) {
     if (value === 0) {
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", "#f5f5f5");
         document.body.style.background = "#f5f5f5";
         document.body.style.color = "#f5f5f5";
         
@@ -122,6 +123,7 @@ function setMode( value ) {
         
         document.getElementById("mode-button").className = "fa-solid fa-sun"
     } else if ( value === 1 ) {
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", "#101820")
         document.body.style.background = "#101820";
         document.body.style.color = "#101820";
         
