@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "gsap": "^3.11.5",
+    "magicmouse.js": "^1.2.1",
+    "mouse-follower": "^1.1.2"
+  }
+}
